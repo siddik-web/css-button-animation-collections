@@ -2,7 +2,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     background-color: black;
     width: 100%;
     height: 100vh;
@@ -16,11 +16,19 @@ html, body {
     margin: 24px;
     border: none;
     color: #FFF;
-    background-image: linear-gradient(to left, #C4E538, #009432, #C4E538 );
     background-size: 200%;
     text-transform: uppercase;
     transition: 0.6s;
     cursor: pointer;
+    &.btn-1{
+        background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
+    }
+    &.btn-2{
+        background-image: linear-gradient(to left, #C4E538, #009432, #C4E538 );
+    }
+    &.btn-3{
+        background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+    }
     &:hover{
         background-position: right;
     }
