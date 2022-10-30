@@ -1,4 +1,4 @@
 # css-button-animation-collections
 CSS Button Animation Collections
-## Hover Glow Effect
-<img width="440" alt="Screenshot 2022-10-30 at 7 03 34 AM" src="https://user-images.githubusercontent.com/53170094/198858383-4a512c81-e5f7-4169-89a1-515d6f30c920.png">
+## Box Shadow Hover Effect
+<img width="421" alt="Screenshot 2022-10-30 at 11 42 55 AM" src="https://user-images.githubusercontent.com/53170094/198864357-6a98c46f-d7fe-49f2-9b41-f2f456d14df8.png">
