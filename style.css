@@ -1,85 +1,32 @@
-html, body {
+html,
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-color: black;
   width: 100%;
   height: 100vh;
   padding: 0px;
   margin: 0px;
 }
 
-.glow-on-hove {
-  width: 250px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #111;
-  cursor: pointer;
-  border-radius: 10px;
+button {
+  padding: 20px 40px;
+  background: none;
   position: relative;
-  z-index: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  outline: none;
+  cursor: pointer;
 }
-.glow-on-hove::before {
-  content: "";
-  background-image: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  border-radius: 10px;
-  -webkit-animation: glowing 20s linear infinite;
-          animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.glow-on-hove:active {
-  color: #000;
-}
-.glow-on-hove:active::after {
-  background: transparent;
-}
-.glow-on-hove:hover::before {
-  opacity: 1;
-}
-.glow-on-hove::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  border-radius: 10px;
-  z-index: -1;
-}
-
-@-webkit-keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }/*# sourceMappingURL=style.css.map */
